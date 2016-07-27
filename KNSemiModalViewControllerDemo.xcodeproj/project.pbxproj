@@ -37,8 +37,8 @@
 		8B8767E91552155300BA2A8E /* KNAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8767E71552155300BA2A8E /* KNAboutViewController.xib */; };
 		8B9E0B541553664F00BE3A69 /* KNModalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E0B531553664F00BE3A69 /* KNModalTableViewController.m */; };
 		8BD1CEB1158C6C4F00F6956E /* KNThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1CEB0158C6C4F00F6956E /* KNThirdViewController.xib */; };
-		EF994A551D477D6600619DFF /* KNSemiModalViewController-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EF994A541D477D6600619DFF /* KNSemiModalViewController-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF994A5C1D477D6600619DFF /* KNSemiModalViewController-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF994A521D477D6500619DFF /* KNSemiModalViewController-iOS.framework */; };
+		EF0429531D49060F00C325FA /* UIViewController+KNSemiModal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B41C9A41551564800413B5A /* UIViewController+KNSemiModal.h */; };
+		EF994A5C1D477D6600619DFF /* KNSemiModalViewControlleriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF994A521D477D6500619DFF /* KNSemiModalViewControlleriOS.framework */; };
 		EF994A611D477D6600619DFF /* KNSemiModalViewController_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF994A601D477D6600619DFF /* KNSemiModalViewController_iOSTests.m */; };
 		EF994A6A1D477D9300619DFF /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B41C9A51551564800413B5A /* UIViewController+KNSemiModal.m */; };
 /* End PBXBuildFile section */
@@ -95,8 +95,7 @@
 		8B9E0B521553664F00BE3A69 /* KNModalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNModalTableViewController.h; sourceTree = "<group>"; };
 		8B9E0B531553664F00BE3A69 /* KNModalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNModalTableViewController.m; sourceTree = "<group>"; };
 		8BD1CEB0158C6C4F00F6956E /* KNThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KNThirdViewController.xib; sourceTree = "<group>"; };
-		EF994A521D477D6500619DFF /* KNSemiModalViewController-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "KNSemiModalViewController-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF994A541D477D6600619DFF /* KNSemiModalViewController-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KNSemiModalViewController-iOS.h"; sourceTree = "<group>"; };
+		EF994A521D477D6500619DFF /* KNSemiModalViewControlleriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KNSemiModalViewControlleriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF994A561D477D6600619DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF994A5B1D477D6600619DFF /* KNSemiModalViewController-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KNSemiModalViewController-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF994A601D477D6600619DFF /* KNSemiModalViewController_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNSemiModalViewController_iOSTests.m; sourceTree = "<group>"; };
@@ -126,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF994A5C1D477D6600619DFF /* KNSemiModalViewController-iOS.framework in Frameworks */,
+				EF994A5C1D477D6600619DFF /* KNSemiModalViewControlleriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				8B41C96E1551561200413B5A /* KNSemiModalViewControllerDemo.app */,
-				EF994A521D477D6500619DFF /* KNSemiModalViewController-iOS.framework */,
+				EF994A521D477D6500619DFF /* KNSemiModalViewControlleriOS.framework */,
 				EF994A5B1D477D6600619DFF /* KNSemiModalViewController-iOSTests.xctest */,
 			);
 			name = Products;
@@ -269,7 +268,6 @@
 		EF994A531D477D6600619DFF /* KNSemiModalViewController-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EF994A541D477D6600619DFF /* KNSemiModalViewController-iOS.h */,
 				EF994A561D477D6600619DFF /* Info.plist */,
 			);
 			path = "KNSemiModalViewController-iOS";
@@ -291,7 +289,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF994A551D477D6600619DFF /* KNSemiModalViewController-iOS.h in Headers */,
+				EF0429531D49060F00C325FA /* UIViewController+KNSemiModal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,9 +313,9 @@
 			productReference = 8B41C96E1551561200413B5A /* KNSemiModalViewControllerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EF994A511D477D6500619DFF /* KNSemiModalViewController-iOS */ = {
+		EF994A511D477D6500619DFF /* KNSemiModalViewControlleriOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF994A671D477D6600619DFF /* Build configuration list for PBXNativeTarget "KNSemiModalViewController-iOS" */;
+			buildConfigurationList = EF994A671D477D6600619DFF /* Build configuration list for PBXNativeTarget "KNSemiModalViewControlleriOS" */;
 			buildPhases = (
 				EF994A4D1D477D6500619DFF /* Sources */,
 				EF994A4E1D477D6500619DFF /* Frameworks */,
@@ -328,9 +326,9 @@
 			);
 			dependencies = (
 			);
-			name = "KNSemiModalViewController-iOS";
+			name = KNSemiModalViewControlleriOS;
 			productName = "KNSemiModalViewController-iOS";
-			productReference = EF994A521D477D6500619DFF /* KNSemiModalViewController-iOS.framework */;
+			productReference = EF994A521D477D6500619DFF /* KNSemiModalViewControlleriOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EF994A5A1D477D6600619DFF /* KNSemiModalViewController-iOSTests */ = {
@@ -381,7 +379,7 @@
 			projectRoot = "";
 			targets = (
 				8B41C96D1551561200413B5A /* KNSemiModalViewControllerDemo */,
-				EF994A511D477D6500619DFF /* KNSemiModalViewController-iOS */,
+				EF994A511D477D6500619DFF /* KNSemiModalViewControlleriOS */,
 				EF994A5A1D477D6600619DFF /* KNSemiModalViewController-iOSTests */,
 			);
 		};
@@ -466,7 +464,7 @@
 /* Begin PBXTargetDependency section */
 		EF994A5E1D477D6600619DFF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EF994A511D477D6500619DFF /* KNSemiModalViewController-iOS */;
+			target = EF994A511D477D6500619DFF /* KNSemiModalViewControlleriOS */;
 			targetProxy = EF994A5D1D477D6600619DFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -757,13 +755,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF994A671D477D6600619DFF /* Build configuration list for PBXNativeTarget "KNSemiModalViewController-iOS" */ = {
+		EF994A671D477D6600619DFF /* Build configuration list for PBXNativeTarget "KNSemiModalViewControlleriOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF994A631D477D6600619DFF /* Debug */,
 				EF994A641D477D6600619DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF994A681D477D6600619DFF /* Build configuration list for PBXNativeTarget "KNSemiModalViewController-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -772,6 +771,7 @@
 				EF994A661D477D6600619DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
